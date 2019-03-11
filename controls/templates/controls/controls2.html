@@ -1,0 +1,35 @@
+{% extends 'controls/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<script src='{% static "controls/controls2.js" %}'></script>
+<style>
+.cell{
+    text-align: center;
+}
+</style>
+
+<!-- <link rel="stylesheet" href="{% static 'controls/search.css' %}"> -->
+<div class="nav-wrapper">
+    <h1>Cogni Controls 2</h1>
+</div>
+
+<div style="margin-top: 50px">
+<table id="table_controls2" class="table table-striped table-bordered" style="width:100%; ">
+        <thead>
+            <tr>
+                <th>Cogni ID</th>
+                <th>Check-In ID</th>
+                <th>Type</th>
+                <th>Name</th>
+                <th>College</th>
+                <th>Kit Issued</th>
+                <th>ID Issued</th>
+                <th>Allot</th>
+            </tr>
+        </thead>
+    <tbody>
+    </tbody>
+
+</table>
+<div>
+{% endblock %}

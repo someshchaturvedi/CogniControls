@@ -25,7 +25,7 @@ SECRET_KEY = 'x@qlo%l1@0=mjazy(*p0uh1eswt*$9pe2dji(yzjpp8=6us25a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.0.104', '192.168.0.131', '127.0.0.1', '192.168.103.187', '192.168.0.255', '192.168.0.111']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'controls'
 ]
 
 MIDDLEWARE = [
@@ -73,13 +74,24 @@ WSGI_APPLICATION = 'Controls.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'controls',
+        'USER': 'hulksmash',
+        'PASSWORD': 'adminpassword',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -105,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -116,5 +128,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static")
+# ]
+STATIC_ROOT = os.path.join(BASE_DIR, "static_files")
 STATIC_URL = '/static/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/controls/'

@@ -1,0 +1,124 @@
+{% extends 'controls/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.show-on-data{
+    display: none;
+}
+
+#toggle_box {
+  background: white;
+  color: #555;
+  padding: 1em;
+  max-width: 300px;
+  border-radius: 5px;
+  margin: 1em auto;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.toggle {
+  appearance: none;
+  background-color: #900;
+  border: none;
+  border-radius: 50px;
+  display: inline-block;
+  height: 20px;
+  margin: 5px;
+  position: relative;
+  width: 50px;
+  vertical-align: middle;
+  will-change: background-color;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+
+  &:before {
+    background: white radial-gradient(white 40%, silver);
+    border: 1px solid #999;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: -3px;
+    left: 0;
+    will-change: transform;
+    transition: transform 0.2s ease;
+  }
+
+  &:checked {
+    background-color: green;
+
+    &:before {
+      transform: translateX(calc(50px - 24px));
+    }
+  }
+
+  &:focus {
+    outline: none;
+    animation: focused 0.3s ease alternate infinite;
+  }
+}
+
+@keyframes focused {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0 0 2px 3px #9ecaed;
+  }
+}
+</style>
+
+<div class="nav-wrapper">
+    <h1>Cogni Controls 3</h1>
+</div>
+
+<div class="searchform cf">
+    <input type="text" id="cogni_id" placeholder="Cogni ID">
+    <button type="submit" id="btn_search">Search</button>
+</div>
+
+<table id="table3" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Cogni ID</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>College</th>
+                <th>email</th>
+                <th>gender</th>
+                <th>controls1_at</th>
+                <th>controls1_at</th>
+            </tr>
+        </thead>
+
+</table>
+
+
+<div class="searchform cf show-on-data"
+    style="width:117px !important;">
+    <button type="submit" id="btn_caution">Refunded</button>
+</div>
+<script src='{% static "controls/controls3.js" %}'></script>
+
+{% endblock %}

@@ -1,0 +1,117 @@
+1520762478319	geckodriver	INFO	geckodriver 0.19.1
+1520762478323	geckodriver	INFO	Listening on 127.0.0.1:41225
+1520762582670	geckodriver	INFO	geckodriver 0.19.1
+1520762582677	geckodriver	INFO	Listening on 127.0.0.1:37030
+1520762649598	geckodriver	INFO	geckodriver 0.19.1
+1520762649603	geckodriver	INFO	Listening on 127.0.0.1:59966
+1520766847097	geckodriver	INFO	geckodriver 0.19.1
+1520766847101	geckodriver	INFO	Listening on 127.0.0.1:47528
+1520767016612	geckodriver	INFO	geckodriver 0.19.1
+1520767016619	geckodriver	INFO	Listening on 127.0.0.1:39645
+1520767017747	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mKifWgUhXW8B"
+1520767018299	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767018300	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767018352	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767018352	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767018807	Marionette	INFO	Enabled via --marionette
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:15654): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:15716): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1520767022361	Marionette	INFO	Listening on port 38926
+1520767022396	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520767022752	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+1520767340596	geckodriver	INFO	geckodriver 0.19.1
+1520767340600	geckodriver	INFO	Listening on 127.0.0.1:57827
+1520767341723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.2Bhy7rPiArGZ"
+1520767342042	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767342043	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767342045	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767342045	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767342519	Marionette	INFO	Enabled via --marionette
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:16308): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:16366): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1520767345191	Marionette	INFO	Listening on port 38977
+1520767345242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520767345502	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+1520767641522	geckodriver	INFO	geckodriver 0.19.1
+1520767641528	geckodriver	INFO	Listening on 127.0.0.1:33301
+1520767642654	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uYjsc2U0Dt3L"
+1520767642966	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767642967	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767642969	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3089:5 < observe@addonManager.js:65:9
+1520767642970	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1520767643401	Marionette	INFO	Enabled via --marionette
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:17079): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:17136): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1520767645985	Marionette	INFO	Listening on port 51812
+1520767646069	Marionette	WARN	TLS certificate errors will be ignored for this session
+1520767646339	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+[Child 17136, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-F78X6d/firefox-58.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

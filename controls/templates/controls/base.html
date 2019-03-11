@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<link rel='stylesheet" href="{% static "controls/materialize.min.css" %}'>
+<script src='{% static "controls/jquery-3.3.1.min.js" %}'></script>
+<script src='{% static "controls/materialize.min.js" %}'></script>
+<script src='{% static "controls/jquery.cookie.js" %}'></script>
+
+<link rel="stylesheet" href="{% static 'controls/search.css' %}">
+
+<script src='{% static "controls/datatable.js" %}'></script>
+<link rel="stylesheet" href="{% static 'controls/datatable.css' %}">
+
+<body>
+    <form class="searchform cf"
+        action="/logout/"
+        method="post"
+        style="width:117px !important; position: absolute; top:2%; right:2%">
+        {% csrf_token %}
+        <button type="submit" id="btn_logout">Logout</button>
+
+    </form>
+
+            {% block content %}
+            {% endblock %}
+
+</body>

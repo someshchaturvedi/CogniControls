@@ -1,0 +1,9 @@
+{% extends 'controls/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<script src='{% static "controls/admin.js" %}'></script>
+<div class="searchform cf show-on-data"
+    style="width:117px !important;">
+    <button type="submit" id="btn_sync">Sync DB</button>
+</div>
+{% endblock %}
